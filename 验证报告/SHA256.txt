@@ -1,2 +1,6 @@
-萌栖.exe  6be888eed9c7d8afb84817f1f1456c9e6a882fe16fe6aa4a8e5beb75a5a7954c
-萌栖安装版.exe  dd2dd54552d82cc38570683850fe9ef36d4d0734fb5c456b772e888fce941081
+# 萌栖 1.7.3 发布文件 SHA256
+# GitHub Release 资产名 -> 对应构建产物
+Mengqi-1.7.3-portable.exe  6be888eed9c7d8afb84817f1f1456c9e6a882fe16fe6aa4a8e5beb75a5a7954c
+Mengqi-1.7.3-setup.exe  dd2dd54552d82cc38570683850fe9ef36d4d0734fb5c456b772e888fce941081
+# Mengqi-1.7.3-portable.exe 即 萌栖.exe（便携单文件版）
+# Mengqi-1.7.3-setup.exe 即 萌栖安装版.exe（安装向导）
