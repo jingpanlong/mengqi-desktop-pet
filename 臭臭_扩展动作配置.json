@@ -1,0 +1,53 @@
+{
+  "name": "臭臭",
+  "cellWidth": 192,
+  "cellHeight": 208,
+  "columns": 8,
+  "baseAtlas": "src/chouchou.png",
+  "extendedAtlas": "src/chouchou-extra.png",
+  "extendedStates": [
+    {
+      "name": "sleep",
+      "label": "睡觉",
+      "row": 0,
+      "frames": 4,
+      "durationsMs": [420, 420, 420, 420]
+    },
+    {
+      "name": "stretch",
+      "label": "伸懒腰",
+      "row": 1,
+      "frames": 4,
+      "durationsMs": [220, 220, 220, 320]
+    },
+    {
+      "name": "groom",
+      "label": "舔毛",
+      "row": 2,
+      "frames": 4,
+      "durationsMs": [240, 240, 240, 320]
+    },
+    {
+      "name": "yawn",
+      "label": "打哈欠",
+      "row": 3,
+      "frames": 4,
+      "durationsMs": [200, 200, 240, 360]
+    },
+    {
+      "name": "eat",
+      "label": "吃饭",
+      "row": 4,
+      "frames": 4,
+      "durationsMs": [220, 220, 220, 320]
+    },
+    {
+      "name": "play",
+      "label": "玩球",
+      "row": 5,
+      "frames": 4,
+      "durationsMs": [180, 180, 180, 320]
+    }
+  ],
+  "note": "臭臭扩展图集；基础九种动作见臭臭_基础动作配置.json。"
+}

@@ -1,0 +1,28 @@
+# ===== 构建产物：通过 GitHub Release 分发，不入库 =====
+*.exe
+build-log.txt
+
+# ===== 自检 / 临时工作目录 =====
+_selftest/
+_work/
+.workbuddy/
+nul
+
+# ===== work 目录只保留可复用的构建脚本，其余是素材与中间产物 =====
+work/*
+!work/chouchou/
+work/chouchou/*
+!work/chouchou/build.py
+!work/chouchou/build_installer.py
+
+# ===== 验证报告里的界面截图与「界面预览」重复，不重复入库 =====
+验证报告/ui/
+
+# ===== 系统 / 编辑器 =====
+Thumbs.db
+desktop.ini
+.vs/
+*.user
+*.suo
+*.bak
+*.tmp

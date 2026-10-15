@@ -1,0 +1,294 @@
+{
+  "format": "萌栖基础九行动作图集",
+  "spritesheet": "src/spritesheet.png",
+  "pngSpritesheet": "src/spritesheet.png",
+  "columns": 8,
+  "rows": 9,
+  "cellWidth": 192,
+  "cellHeight": 208,
+  "width": 1536,
+  "height": 1872,
+  "rowOrder": [
+    "idle",
+    "running-right",
+    "running-left",
+    "waving",
+    "jumping",
+    "failed",
+    "waiting",
+    "running",
+    "review"
+  ],
+  "animations": {
+    "idle": {
+      "label": "待机眨眼",
+      "row": 0,
+      "columns": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "durationMs": [
+        280,
+        110,
+        110,
+        140,
+        140,
+        320
+      ],
+      "loop": true,
+      "frames": [
+        "frames/idle/00.png",
+        "frames/idle/01.png",
+        "frames/idle/02.png",
+        "frames/idle/03.png",
+        "frames/idle/04.png",
+        "frames/idle/05.png"
+      ]
+    },
+    "running-right": {
+      "label": "向右跑动",
+      "row": 1,
+      "columns": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "durationMs": [
+        120,
+        120,
+        120,
+        120,
+        120,
+        120,
+        120,
+        220
+      ],
+      "loop": true,
+      "frames": [
+        "frames/running-right/00.png",
+        "frames/running-right/01.png",
+        "frames/running-right/02.png",
+        "frames/running-right/03.png",
+        "frames/running-right/04.png",
+        "frames/running-right/05.png",
+        "frames/running-right/06.png",
+        "frames/running-right/07.png"
+      ]
+    },
+    "running-left": {
+      "label": "向左跑动",
+      "row": 2,
+      "columns": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "durationMs": [
+        120,
+        120,
+        120,
+        120,
+        120,
+        120,
+        120,
+        220
+      ],
+      "loop": true,
+      "frames": [
+        "frames/running-left/00.png",
+        "frames/running-left/01.png",
+        "frames/running-left/02.png",
+        "frames/running-left/03.png",
+        "frames/running-left/04.png",
+        "frames/running-left/05.png",
+        "frames/running-left/06.png",
+        "frames/running-left/07.png"
+      ]
+    },
+    "waving": {
+      "label": "挥爪打招呼",
+      "row": 3,
+      "columns": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "durationMs": [
+        140,
+        140,
+        140,
+        280
+      ],
+      "loop": true,
+      "frames": [
+        "frames/waving/00.png",
+        "frames/waving/01.png",
+        "frames/waving/02.png",
+        "frames/waving/03.png"
+      ]
+    },
+    "jumping": {
+      "label": "跳跃",
+      "row": 4,
+      "columns": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "durationMs": [
+        140,
+        140,
+        140,
+        140,
+        280
+      ],
+      "loop": true,
+      "frames": [
+        "frames/jumping/00.png",
+        "frames/jumping/01.png",
+        "frames/jumping/02.png",
+        "frames/jumping/03.png",
+        "frames/jumping/04.png"
+      ]
+    },
+    "failed": {
+      "label": "失落趴下",
+      "row": 5,
+      "columns": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "durationMs": [
+        140,
+        140,
+        140,
+        140,
+        140,
+        140,
+        140,
+        240
+      ],
+      "loop": true,
+      "frames": [
+        "frames/failed/00.png",
+        "frames/failed/01.png",
+        "frames/failed/02.png",
+        "frames/failed/03.png",
+        "frames/failed/04.png",
+        "frames/failed/05.png",
+        "frames/failed/06.png",
+        "frames/failed/07.png"
+      ]
+    },
+    "waiting": {
+      "label": "等待回应",
+      "row": 6,
+      "columns": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "durationMs": [
+        150,
+        150,
+        150,
+        150,
+        150,
+        260
+      ],
+      "loop": true,
+      "frames": [
+        "frames/waiting/00.png",
+        "frames/waiting/01.png",
+        "frames/waiting/02.png",
+        "frames/waiting/03.png",
+        "frames/waiting/04.png",
+        "frames/waiting/05.png"
+      ]
+    },
+    "running": {
+      "label": "专注揉爪",
+      "row": 7,
+      "columns": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "durationMs": [
+        120,
+        120,
+        120,
+        120,
+        120,
+        220
+      ],
+      "loop": true,
+      "frames": [
+        "frames/running/00.png",
+        "frames/running/01.png",
+        "frames/running/02.png",
+        "frames/running/03.png",
+        "frames/running/04.png",
+        "frames/running/05.png"
+      ]
+    },
+    "review": {
+      "label": "观察思考",
+      "row": 8,
+      "columns": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "durationMs": [
+        150,
+        150,
+        150,
+        150,
+        150,
+        280
+      ],
+      "loop": true,
+      "frames": [
+        "frames/review/00.png",
+        "frames/review/01.png",
+        "frames/review/02.png",
+        "frames/review/03.png",
+        "frames/review/04.png",
+        "frames/review/05.png"
+      ]
+    }
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "format": "萌栖基础九行动作图集",
+  "pet": "臭臭",
+  "spritesheet": "src/chouchou.png",
+  "pngSpritesheet": "src/chouchou.png",
+  "columns": 8,
+  "rows": 9,
+  "cellWidth": 192,
+  "cellHeight": 208,
+  "width": 1536,
+  "height": 1872,
+  "rowOrder": [
+    "idle",
+    "running-right",
+    "running-left",
+    "waving",
+    "jumping",
+    "failed",
+    "waiting",
+    "running",
+    "review"
+  ],
+  "note": "臭臭：奶油白布偶猫，浅灰褐重点色，蓝眼粉鼻；基础图集与内置小黑同规范。"
+}

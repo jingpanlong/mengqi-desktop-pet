@@ -1,0 +1,23 @@
+{
+  "ok": true,
+  "atlasChecks": [
+    {
+      "file": "spritesheet.png",
+      "usedFrames": 57,
+      "unusedCellsTransparent": true,
+      "size": [
+        1536,
+        1872
+      ]
+    },
+    {
+      "file": "extra.png",
+      "usedFrames": 24,
+      "unusedCellsTransparent": true,
+      "size": [
+        1536,
+        1248
+      ]
+    }
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "ok": true,
+  "sizes": [
+    {
+      "size": 16,
+      "transparentMaskBytes": 28,
+      "cornerAlpha": 0
+    },
+    {
+      "size": 24,
+      "transparentMaskBytes": 46,
+      "cornerAlpha": 0
+    },
+    {
+      "size": 32,
+      "transparentMaskBytes": 66,
+      "cornerAlpha": 0
+    },
+    {
+      "size": 48,
+      "transparentMaskBytes": 127,
+      "cornerAlpha": 0
+    },
+    {
+      "size": 64,
+      "transparentMaskBytes": 192,
+      "cornerAlpha": 0
+    },
+    {
+      "size": 128,
+      "transparentMaskBytes": 788,
+      "cornerAlpha": 0
+    },
+    {
+      "size": 256,
+      "transparentMaskBytes": 2847,
+      "cornerAlpha": 0
+    }
+  ]
+}
