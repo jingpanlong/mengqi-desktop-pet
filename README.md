@@ -5,7 +5,7 @@
 [![License](https://img.shields.io/badge/license-MIT-7c5cc4.svg)](./LICENSE)
 [![Platform](https://img.shields.io/badge/platform-Windows%2010%20%2F%2011-3d8bff.svg)](#系统要求)
 [![.NET](https://img.shields.io/badge/.NET%20Framework-4.7%2B-512bd4.svg)](#系统要求)
-[![Release](https://img.shields.io/badge/release-1.7.3-2ea043.svg)](__GH_URL__/releases/latest)
+[![Release](https://img.shields.io/badge/release-1.7.3-2ea043.svg)](https://github.com/jingpanlong/mengqi-desktop-pet/releases/latest)
 
 **简体中文** | [功能详解](./使用说明.md)
 
@@ -13,7 +13,7 @@
 
 ## 下载
 
-到 [**Releases**](__GH_URL__/releases/latest) 页面下载，按需要选一个：
+到 [**Releases**](https://github.com/jingpanlong/mengqi-desktop-pet/releases/latest) 页面下载，按需要选一个：
 
 | 文件 | 说明 | 适合谁 |
 | --- | --- | --- |
@@ -103,7 +103,7 @@
 
 ## 快速开始
 
-1. 从 [Releases](__GH_URL__/releases/latest) 下载 `萌栖.exe`（或安装版）。
+1. 从 [Releases](https://github.com/jingpanlong/mengqi-desktop-pet/releases/latest) 下载 `萌栖.exe`（或安装版）。
 2. 双击运行。桌面上就会出现小黑。
 3. 右键它有完整菜单；双击它或按 `Alt + Shift + M` 打开**陪伴中心**。
 4. 想换宠物？进「我的宠物」→ 上传照片 → 创建并使用。

@@ -9,6 +9,8 @@ namespace Mengqi
     {
         private readonly Stopwatch stopwatch=new Stopwatch();
         private readonly Timer toolsTimer=new Timer {Interval=100};
+        /// <summary>开源仓库地址：README、Release 下载页都在这里。</summary>
+        internal const string GitHubUrl="https://github.com/jingpanlong/mengqi-desktop-pet";
         private Label stopwatchLabel;
         internal void VerifyToolActions()
         {
@@ -17,6 +19,7 @@ namespace Mengqi
             FindButton(pages["tools"],"开始 / 暂停").PerformClick();System.Threading.Thread.Sleep(20);FindButton(pages["tools"],"开始 / 暂停").PerformClick();if(stopwatch.IsRunning || stopwatch.ElapsedMilliseconds<1) throw new InvalidOperationException("秒表控制失败。");
             FindButton(pages["tools"],"记录到笔记").PerformClick();if(!pet.data.Notes.Contains("秒表 ·")) throw new InvalidOperationException("秒表记录未保存。");FindButton(pages["tools"],"清零").PerformClick();if(stopwatch.ElapsedTicks!=0) throw new InvalidOperationException("秒表未清零。");
             if(!AllText(pages["about"]).Contains("微信公众号：景同志") || !AllText(pages["about"]).Contains("小红书：景同学")) throw new InvalidOperationException("关于页作者信息缺失。");
+            if(!AllText(pages["about"]).Contains(GitHubUrl) || !AllText(pages["about"]).Contains("打开发布页下载")) throw new InvalidOperationException("关于页缺少 GitHub 开源下载入口。");
             Hide();
         }
         private static Button FindButton(Control parent,string text) {foreach(Control child in parent.Controls) {Button button=child as Button;if(button!=null && button.Text==text) return button;Button nested=FindButton(child,text);if(nested!=null) return nested;}return null;}
@@ -35,13 +38,24 @@ namespace Mengqi
         }
         private void BuildAbout()
         {
-            Panel body=Page("about","关于萌栖","让陪伴住进桌面。版本 1.1.0");FlowLayoutPanel area=Ui.Stack();body.Controls.Add(area);
+            Panel body=Page("about","关于萌栖","让陪伴住进桌面。版本 1.7.3");FlowLayoutPanel area=Ui.Stack();body.Controls.Add(area);
             area.Controls.Add(Ui.Label("萌栖是一款桌面宠物陪伴软件。小黑会在桌面活动、回应互动，陪你聊天、专注和休息；你也可以上传自己的宠物照片，制作属于自己的桌宠。",680,95));
             area.Controls.Add(Ui.Label("支持离线陪伴、气泡聊天、工作与生活提醒、专注计时、待办笔记、宠物导入、备份和可选联网 AI。",680,70));
+            Label openSource=Ui.Label("开源与下载",680,40);openSource.Font=new Font("Microsoft YaHei UI",16,FontStyle.Bold);area.Controls.Add(openSource);
+            area.Controls.Add(Ui.Label("本项目已在 GitHub 开源（MIT 许可）。源码、使用说明和最新版安装包都在这里：\r\n"+GitHubUrl,680,84));
+            FlowLayoutPanel links=new FlowLayoutPanel {Size=new Size(680,50)};
+            links.Controls.Add(Ui.Button("打开发布页下载",delegate {OpenUrl(GitHubUrl+"/releases/latest");}));
+            links.Controls.Add(Ui.Button("打开仓库主页",delegate {OpenUrl(GitHubUrl);}));
+            links.Controls.Add(Ui.Button("复制仓库地址",delegate {try {Clipboard.SetText(GitHubUrl);} catch { }}));area.Controls.Add(links);
             Label author=Ui.Label("联系作者",680,40);author.Font=new Font("Microsoft YaHei UI",16,FontStyle.Bold);area.Controls.Add(author);
             area.Controls.Add(Ui.Label("微信公众号：景同志\n\n小红书：景同学",680,100));
             FlowLayoutPanel buttons=new FlowLayoutPanel {Size=new Size(680,50)};buttons.Controls.Add(Ui.Button("复制公众号名称",delegate {Clipboard.SetText("景同志");}));buttons.Controls.Add(Ui.Button("复制小红书名称",delegate {Clipboard.SetText("景同学");}));area.Controls.Add(buttons);
             area.Controls.Add(Ui.Label("离线功能在本机运行。联网 AI 需要用户自行配置服务；提醒需要软件运行、电脑保持唤醒。",680,70));
+        }
+        /// <summary>用系统默认浏览器打开链接；失败就静默忽略，不影响软件运行。</summary>
+        private static void OpenUrl(string url)
+        {
+            try {Process.Start(new ProcessStartInfo(url) {UseShellExecute=true});} catch { }
         }
     }
 }

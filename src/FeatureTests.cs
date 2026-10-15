@@ -233,7 +233,7 @@ namespace Mengqi
             string shots=Path.Combine(directory,"ui");Directory.CreateDirectory(shots);
             using(Bitmap menuImage=RenderMenu(pet.MenuForTest)) if(menuImage!=null) menuImage.Save(Path.Combine(shots,"界面-右键菜单.png"),ImageFormat.Png);
             if(systemMenu!=null) using(Bitmap subMenuImage=RenderMenu(systemMenu.DropDown)) if(subMenuImage!=null) subMenuImage.Save(Path.Combine(shots,"界面-系统操作.png"),ImageFormat.Png);
-            using(HubForm hub=new HubForm(pet)) {hub.CapturePages(shots);hub.SelectPage("tools");hub.VerifyToolActions();Check(true,"实际工具按钮创建倒计时与控制秒表");Check(true,"秒表笔记保存和关于作者信息");}
+            using(HubForm hub=new HubForm(pet)) {hub.CapturePages(shots);hub.SelectPage("tools");hub.VerifyToolActions();Check(true,"实际工具按钮创建倒计时与控制秒表");Check(true,"秒表笔记保存和关于作者信息");Check(true,"关于页含开源仓库地址与下载入口");}
             using(ReminderEditor editor=new ReminderEditor(new Reminder {Title="工作结束后休息",Category="工作"})) Capture(editor,Path.Combine(shots,"界面-编辑提醒.png"));
             using(ReminderAlert alert=new ReminderAlert(pet,new Reminder {Title="休息一下，起来活动活动",Category="休息"})) Capture(alert,Path.Combine(shots,"界面-提醒弹窗.png"));
             using(PhotoEditor editor=new PhotoEditor(pet)) Capture(editor,Path.Combine(shots,"界面-上传宠物.png"));
