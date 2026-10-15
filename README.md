@@ -2,6 +2,8 @@
 
 > 一只住在 Windows 桌面上的猫。它会跑动、眨眼、挥爪、睡觉，能陪你聊天、盯你休息、提醒你吃药喝水，还会帮你截图录屏、整理桌面、清理回收站。
 
+![萌栖封面](界面预览/封面图.png)
+
 [![License](https://img.shields.io/badge/license-MIT-7c5cc4.svg)](./LICENSE)
 [![Platform](https://img.shields.io/badge/platform-Windows%2010%20%2F%2011-3d8bff.svg)](#系统要求)
 [![.NET](https://img.shields.io/badge/.NET%20Framework-4.7%2B-512bd4.svg)](#系统要求)
